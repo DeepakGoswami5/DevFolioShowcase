@@ -22,3 +22,4 @@ export const TABS = [
         id:"contact"
     }
 ]
+export const HOME_DESIGNATION_DATA = "Software Developer"
