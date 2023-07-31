@@ -13,7 +13,7 @@ const Home = () => {
     }
     return (
         <>
-            <nav className="bg-black border-black-200 dark:bg-black-900">
+            <nav className="border-black-200 dark:bg-black-900">
                 <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                     <a className="flex items-center">
                         <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"></span>
@@ -30,13 +30,13 @@ const Home = () => {
                     </button>
                     {isNavBar && (
                         <div className={`w-full md:block md:w-auto ${!isNavBar ? `hidden` : null}`} id="navbar-default">
-                            <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-black-100 rounded-lg bg-black-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-black dark:bg-black-800 md:dark:bg-black-900 dark:border-black-700">
+                            <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-black-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 dark:bg-black-800 md:dark:bg-black-900 dark:border-black-700">
                                 {TABS.map((item, ind) => (
                                     <li key={item.id + ind}>
                                         <Link to={item.id}>
                                             <p
                                                 onClick={() => handleTabChange(item.id)}
-                                                className={`block py-2 pl-3 pr-4 text-grey text-xl hover:text-green-600 bg-black-700 rounded md:bg-transparent md:text-black-700 md:p-0 dark:text-white md:dark:text-black-500 ${currentTab == item.id ? `underline decoration-4 underline-offset-8 decoration-green-700` : ''}`}
+                                                className={`block py-2 pl-3 pr-4 text-grey text-xl hover:text-green-600 rounded md:bg-transparent md:text-black-700 md:p-0 dark:text-white md:dark:text-black-500 ${currentTab == item.id ? `underline decoration-4 underline-offset-7 decoration-green-700` : ''}`}
                                                 aria-current="page"
                                             >
                                                 {item.title}
@@ -53,17 +53,17 @@ const Home = () => {
                 <div className='lg:ml-40 md:ml-40 sm:ml-1'>
                     <div className="text-2xl md:text-5xl text-white font-bold p-2">{NAME}</div>
                     <div className="text-1xl md:text-3xl text-white p-2 text-slate-400">
-                        I'm a passionate <span className="underline decoration-4 underline-offset-8 decoration-green-700">{HOME_DESIGNATION_DATA}</span> from India
+                        I'm a passionate <span className="underline decoration-4 underline-offset-7 decoration-green-700">{HOME_DESIGNATION_DATA}</span> from India
                     </div>
                     <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto pl-2 p-4">
                         <div className="w-full md:block md:w-auto hidden" id="navbar-default">
-                            <ul className="font-medium flex flex-col border border-black-100 rounded-lg bg-black-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-black dark:bg-black-800 md:dark:bg-black-900 dark:border-black-700">
+                            <ul className="font-medium flex flex-col border border-black-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 dark:bg-black-800 md:dark:bg-black-900 dark:border-black-700">
                                 {TABS.map((item, ind) => (
                                     <li key={item.id + ind}>
                                         <Link to={item.id}>
                                             <p
                                                 onClick={() => handleTabChange(item.id)}
-                                                className={`block py-2 pl-3 pr-4 text-grey text-xl hover:text-green-600 bg-black-700 rounded md:bg-transparent md:text-black-700 md:p-0 dark:text-white md:dark:text-black-500 ${currentTab == item.id ? `underline decoration-4 underline-offset-8 decoration-green-700` : ''}`}
+                                                className={`block py-2 pl-3 pr-4 text-grey text-xl hover:text-green-600 rounded md:bg-transparent md:text-black-700 md:p-0 dark:text-white md:dark:text-black-500 ${currentTab == item.id ? `underline decoration-4 underline-offset-7 decoration-green-700` : ''}`}
                                                 aria-current="page"
                                             >
                                                 {item.title}

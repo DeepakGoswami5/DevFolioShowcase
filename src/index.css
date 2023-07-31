@@ -1,8 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-body{
-    background-color: black;
-    font-family: "Open Sans", sans-serif;
+body {
+    font-family: "Poppins", sans-serif;
+    background-image: url("/public/images/batman-background-desktop.jpg");
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+}
+
+@media only screen and (max-width:500px) {
+    body {
+        background-color: black;
+        font-family: "Poppins", sans-serif;
+        background-image: url("/public/images/batman-background-desktop.jpg");
+    }
 }

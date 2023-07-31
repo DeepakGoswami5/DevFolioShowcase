@@ -27,7 +27,7 @@ export const SOCIAL_MEDIA = [
     {
         id: "twitters",
         href: "",
-        imageLink: "/images/twitter.jpg"
+        imageLink: "/images/twitter.svg"
     },
     {
         id: "linkedin",
@@ -37,11 +37,27 @@ export const SOCIAL_MEDIA = [
     {
         id: "leetcode",
         href: "https://leetcode.com/Deepak_goswami/",
-        imageLink: "/images/coding.png"
+        imageLink: "/images/code.svg"
     },
     {
         id: "github",
         href: "https://github.com/DeepakGoswami5",
-        imageLink: "/images/github.png"
+        imageLink: "/images/github.svg"
     }
 ]
+export const ABOUT_PAGE = {
+    title: 'About',
+    description: "LEARN MORE ABOUT ME"
+}
+export const RESUME_PAGE = {
+    title: 'Resume',
+    description: "CHECK MY RESUME"
+}
+export const PROJECTS_PAGE = {
+    title: 'Projects',
+    description: "CHECK MY PROJECTS"
+}
+export const CONTACT_PAGE = {
+    title: 'Contact',
+    description: "CONTACT ME"
+}
