@@ -5,7 +5,7 @@ import Resume from '../../pages/resume'
 import Contact from '../../pages/contact'
 import Projects from '../../pages/projects'
 import NoPage from '../../pages/noPage'
-import Navbar from '../../components/navBar'
+import Navbar from '../navBar'
 
 const AppRouter = () => {
     const location = useLocation();

@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
 import { NAME, TABS, HOME_DESIGNATION_DATA } from "../../constant/data"
-import SocialMediaIcon from '../../components/socialMediaIcon'
+import SocialMediaIcon from '../../components/socialMediaIcon/index.jsx'
 const Home = () => {
     const [currentTab, setCurrentTab] = useState("/home")
     const [isNavBar, setIsNavBar] = useState(false)
