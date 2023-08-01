@@ -1,13 +1,14 @@
 import PageHeader from "../../components/pageHeader"
 import Skills from '../../components/skills'
-import { ABOUT_PAGE, DESIGNATION, ABOUT_SUMMARY, SKILLS } from "../../constant/data"
+import Carousel from "../../components/carousel"
+import { ABOUT_PAGE, DESIGNATION, ABOUT_SUMMARY, SKILLS, INTERESTS } from "../../constant/data"
 const About = () => {
     return (
         <div className="bg-black md:bg-blend-darken max-w-screen-xl md:mx-auto p-4">
             <PageHeader
                 data={ABOUT_PAGE}
             />
-            <div className="md:m-12 text-white font-semibold text-gray-500">
+            <div className="sm:m-4 md:m-12 text-white font-semibold text-gray-500">
                 <div className="grid grid-cols-1 md:grid-cols-2">
                     <div>
                         <img class="inline w-96	h-96 border-current" src="/images/batman-background-mobile.jpg" alt="..." />
@@ -18,7 +19,8 @@ const About = () => {
                     </div>
                 </div>
                 <div className="text-xl	grey-sub font-semibold text-gray-500 mt-4">
-                    Skills
+                    SKILLS
+                    <div className="line"></div>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
                     {SKILLS.map((item) => (
@@ -28,6 +30,24 @@ const About = () => {
                             />
                         </div>
                     ))}
+                </div>
+                <div className="text-xl	grey-sub font-semibold text-gray-500 mt-20">
+                    INTERESTS
+                    <div className="line"></div>
+                </div>
+                <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mt-4">
+                    {INTERESTS.map((item) => (
+                        <button className="ease-in duration-300 bg-grey-08 font-bold text-base p-5">
+                            {item}
+                        </button>
+                    ))}
+                </div>
+                <div className="text-xl	grey-sub font-semibold text-gray-500 mt-20">
+                    TESTIMONIALS
+                    <div className="line"></div>
+                </div>
+                <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mt-4">
+                    {/* <Carousel /> */}
                 </div>
             </div>
 

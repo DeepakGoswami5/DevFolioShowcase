@@ -48,19 +48,19 @@ export const SOCIAL_MEDIA = [
     }
 ]
 export const ABOUT_PAGE = {
-    title: 'About',
+    title: 'ABOUT',
     description: "LEARN MORE ABOUT ME"
 }
 export const RESUME_PAGE = {
-    title: 'Resume',
+    title: 'RESUME',
     description: "CHECK MY RESUME"
 }
 export const PROJECTS_PAGE = {
-    title: 'Projects',
+    title: 'PROJECTS',
     description: "CHECK MY PROJECTS"
 }
 export const CONTACT_PAGE = {
-    title: 'Contact',
+    title: 'CONTACT',
     description: "CONTACT ME"
 }
 export const SKILLS = [
@@ -99,4 +99,12 @@ export const SKILLS = [
         id: "css",
         rating:'70%'
     }
+]
+export const INTERESTS = ["PAINTING","COOKING"]
+export const CAROUSEL = [
+    {
+        title: "React.js",
+        id: "react_js",
+        rating:'70%'
+    },
 ]
