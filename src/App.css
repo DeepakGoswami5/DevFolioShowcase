@@ -5,7 +5,9 @@
 .green-color-bg {
     background: #18d26e;
 }
-
+.border-green{
+    border-color: #18d26e !important;
+}
 .grey-color-bg {
     background: (255, 255, 255, 0.15)
 }

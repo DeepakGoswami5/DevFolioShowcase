@@ -67,44 +67,90 @@ export const SKILLS = [
     {
         title: "React.js",
         id: "react_js",
-        rating:'70%'
+        rating: '70%'
     },
     {
         title: "Next.js",
         id: "next_js",
-        rating:'70%'
+        rating: '70%'
     },
     {
         title: "Redux.js",
         id: "redux_js",
-        rating:'70%'
+        rating: '70%'
     },
     {
         title: "JavaScripts",
         id: "java_scripts",
-        rating:'80%'
+        rating: '80%'
     },
     {
         title: "Python",
         id: "python",
-        rating:'70%'
+        rating: '70%'
     },
     {
         title: "HTML",
         id: "html",
-        rating:'80%'
+        rating: '80%'
     },
     {
         title: "CSS",
         id: "css",
-        rating:'70%'
+        rating: '70%'
     }
 ]
-export const INTERESTS = ["PAINTING","COOKING"]
+export const INTERESTS = ["PAINTING", "COOKING"]
 export const CAROUSEL = [
     {
         title: "React.js",
         id: "react_js",
-        rating:'70%'
+        rating: '70%'
+    },
+]
+
+export const EDUCATION = [
+    {
+        title: "Bachelor of Technology",
+        id: "b_tech",
+        subTitle: 'Computer Science and Information Technology',
+        description: "I hold a Bachelor of Technology degree from Symbiosis University of Applied Sciences, specialized in Computer Science and Information Technology. My academic journey provided me with a comprehensive understanding of key concepts in these fields, including programming, software development, and IT systems. Through coursework and hands-on projects, I've developed a strong foundation in problem-solving, coding, and technology integration. This education has prepared me to contribute effectively to dynamic and innovative technological environments."
+    },
+]
+
+export const EXPERIENCE = [
+    {
+        title: "SDE-I",
+        id: "1",
+        subTitle: 'Brick&Bolt',
+        duration:'Jun 2021 - Present',
+        description: "Bengaluru, Karnataka, India",
+        achievement: [
+            "Worked and maintainer of customer relationship management, analytics, feedback, design, content management portal built-in React.js.",
+            "Worked with design, product, and back-end teams on 20+ dashboards to create multiple web features.",
+            "Contributed features to BrickBolt public-facing website and fixed bugs overnight during Hyderabad and Chennai office launches.",
+            "Built 20+ landing pages and reusable email templates to support marketing campaigns and promotions."
+        ]
+    },
+    {
+        title: "Programmer Analyst Trainee",
+        id: "2",
+        subTitle: 'Quantum Phinance',
+        duration:'Aug 2020 - May 2021',
+        description: "Mumbai, Maharashtra, India",
+        achievement: [
+            " Developed features for loan management system for NBFC for loan calculations, compliance, and reporting.",
+        ]
+    },
+    {
+        title: "Software Engineer Intern",
+        id: "3",
+        subTitle: 'JamaWealth.com',
+        duration:'Jan 2020 - Jul 2020',
+        description: "Hyderabad, Telangana, India",
+        achievement: [
+            "Redesigned wealth management and financial planning manager platform.",
+            "Built 50+ responsive screens using bootstrap framework"
+        ]
     },
 ]
