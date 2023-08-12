@@ -16,10 +16,10 @@ export const TABS = [
         title: "Resume",
         id: "/resume"
     },
-    {
-        title: "Projects",
-        id: "/projects"
-    },
+    // {
+    //     title: "Projects",
+    //     id: "/projects"
+    // },
     {
         title: "Contact",
         id: "/contact"
@@ -153,4 +153,27 @@ export const EXPERIENCE = [
             "Built 50+ responsive screens using bootstrap framework"
         ]
     },
+]
+
+export const CONTACT_ME = [
+    {
+        title: "My Address",
+        id: "my_address",
+        details: 'Indore, MP, India'
+    },
+    // {
+    //     title: "Social Profiles",
+    //     id: "social_profiles",
+    //     details: 'Indore, MP, India'
+    // },
+    {
+        title: "Email Me",
+        id: "email_me",
+        details: 'deepakgoswami0525@gmail.com'
+    },
+    // {
+    //     title: "Call Me",
+    //     id: "call_me",
+    //     details: '+91 968-5555-755'
+    // },
 ]

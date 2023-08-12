@@ -32,15 +32,15 @@ const About = () => {
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mt-4">
                     {INTERESTS.map((item) => (
-                        <button className="ease-in duration-300 bg-grey-08 font-bold text-base p-5">
+                        <div className="text-center ease-in duration-300 bg-grey-08 font-bold text-base p-5">
                             {item}
-                        </button>
+                        </div>
                     ))}
                 </div>
-                <div className="text-xl	grey-sub font-semibold text-gray-500 mt-20">
+                {/* <div className="text-xl	grey-sub font-semibold text-gray-500 mt-20">
                     TESTIMONIALS
                     <div className="line"></div>
-                </div>
+                </div> */}
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mt-4">
                     {/* <Carousel /> */}
                 </div>

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import { Link, useLocation } from 'react-router-dom'
 import { TABS } from "../../constant/data"
+import '../../App.css'
 const NavBar = () => {
     const location = useLocation();
     const [currentTab, setCurrentTab] = useState()
@@ -15,18 +16,16 @@ const NavBar = () => {
         setCurrentTab(location.pathname)
     }, [])
     return (
-        <div className="container mx-auto px-4 opacity-60">
-            <nav className="bg-black border-black-200 dark:bg-black-900">
+        <div className="container mx-auto px-4">
+            <nav className="bg-black border-black-200">
                 <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                     <a className="flex items-center">
-                        <span className="self-center text-3xl font-semibold whitespace-nowrap dark:text-white">Deepak Goswami</span>
+                        <span className="self-center text-3xl font-semibold text-white">Deepak Goswami</span>
                     </a>
                     <button
-                        type="button"
                         onClick={handleNavabar}
-                        className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-green-500 rounded-lg md:hidden hover:bg-black-100 focus:outline-none focus:ring-2 focus:ring-green-200 dark:text-green-400 dark:hover:bg-black-700 dark:focus:ring-black-600"
+                        className="text-white inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg md:hidden"
                     >
-                        <span className="sr-only">Open main menu</span>
                         <svg className="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
                             <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 1h15M1 7h15M1 13h15" />
                         </svg>
@@ -38,7 +37,7 @@ const NavBar = () => {
                                     <Link to={item.id}>
                                         <p
                                             onClick={() => handleTabChange(item.id)}
-                                            className={`block py-2 pl-3 pr-4 text-grey text-xl hover:text-green-600 bg-black-700 rounded md:bg-transparent md:text-black-700 md:p-0 dark:text-white md:dark:text-black-500 ${currentTab == item.id ? `underline decoration-4 underline-offset-7 decoration-green-700` : ''}`}
+                                            className={`block py-2 pl-3 pr-4 text-grey text-xl hover:text-green-600 bg-black-700 rounded md:bg-transparent md:text-black-700 md:p-0 dark:text-white md:dark:text-black-500 ${currentTab == item.id ? `underline underline-offset-8 decoration-4 decoration-green-700` : ''}`}
                                             aria-current="page"
                                         >
                                             {item.title}

@@ -3,7 +3,7 @@ import PageHeader from "../../components/pageHeader"
 import TimeLine from "../../components/timeLine"
 const Resume = () => {
     return (
-        <div className="bg-black border-solid border-2 border-green-800 bg-blend-screen md:bg-blend-darken max-w-screen-xl mx-auto p-4 mt-5">
+        <div className="bg-black bg-blend-screen md:bg-blend-darken max-w-screen-xl mx-auto p-4 mt-5">
             <PageHeader
                 data={RESUME_PAGE}
             />
