@@ -1,12 +1,13 @@
 import { useEffect, useState } from "react"
 import { Link, useLocation } from 'react-router-dom'
-import { TABS } from "../../constant/data"
+import { NAME, TABS } from "../../constant/data"
 import '../../App.css'
 const NavBar = () => {
     const location = useLocation();
     const [currentTab, setCurrentTab] = useState()
     const [isNavBar, setIsNavBar] = useState(false)
     const handleTabChange = (e) => {
+        setIsNavBar(false)
         setCurrentTab(e)
     }
     const handleNavabar = () => {
@@ -15,12 +16,15 @@ const NavBar = () => {
     useEffect(() => {
         setCurrentTab(location.pathname)
     }, [])
+    useEffect(() => {
+
+    },[isNavBar])
     return (
         <div className="container mx-auto px-4">
             <nav className="bg-black border-black-200">
                 <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                     <a className="flex items-center">
-                        <span className="self-center text-3xl font-semibold text-white">Deepak Goswami</span>
+                        <span className="self-center text-2xl md:text-3xl font-semibold text-white">{NAME}</span>
                     </a>
                     <button
                         onClick={handleNavabar}

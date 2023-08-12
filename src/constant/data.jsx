@@ -26,11 +26,11 @@ export const TABS = [
     }
 ]
 export const SOCIAL_MEDIA = [
-    {
-        id: "twitters",
-        href: "",
-        imageLink: "/images/twitter.svg"
-    },
+    // {
+    //     id: "twitters",
+    //     href: "",
+    //     imageLink: "/images/twitter.svg"
+    // },
     {
         id: "linkedin",
         href: "https://www.linkedin.com/in/deepak-goswami-9a4660131/",
