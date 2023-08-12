@@ -12,12 +12,12 @@ import { useEffect } from 'react';
 const AppRouter = () => {
     const location = useLocation();
     const navigate = useNavigate();
-    useEffect(()=> {
-        if(location.pathname === '/'){
+    useEffect(() => {
+        if (location.pathname === '/') {
             navigate("/home");
         }
-        console.log("location",location)
-    },[])
+        console.log("location", location)
+    }, [])
     return (
         <>
             {(location.pathname !== "/home") && <Navbar />}
